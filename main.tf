@@ -1,7 +1,7 @@
 terraform {
   backend "gcs" {
     bucket = "chas-tf-state-nissastigen"
-    prefix = "terraform/state/simon/lab1"
+    prefix = "terraform/state/simon"
   }
   required_providers {
     google = {
