@@ -44,3 +44,6 @@ jobs:
         run: terraform apply -auto-approve
         env:
           GOOGLE_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
+          TF_VAR_project_id: "chas-devsecops-2026"
+          TF_VAR_region: "europe-north1"
+          TF_VAR_student_id: "simon"
