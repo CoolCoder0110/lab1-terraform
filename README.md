@@ -13,7 +13,7 @@ Detta projekt skapar en Linux VM i GCP med Terraform. Miljön är härdad enligt
 - **UFW & Fail2ban:** Blockerar obehörig trafik.
 - **CIS Benchmark Hardening:** Inaktiverar osäkra filsystem, säkrar sysctl-nätverksparametrar, hårdkonfigurerar SSH och aktiverar `auditd`.
 - **Remote State:** State-filen sparas säkert i GCP Cloud Storage, ej lokalt.
-- **Policy-as-Code:** Trivy skannar koden och blockerar vid CRITICAL/HIGH.
+- **Policy-as-Code:** Trivy skannar koden och blockerar vid CRITICAL.
 
 ## Disaster Recovery (DR)
 - **RPO (Recovery Point Objective):** 24 timmar. Backups körs via en snapshot-policy kl 03:00 varje natt.
